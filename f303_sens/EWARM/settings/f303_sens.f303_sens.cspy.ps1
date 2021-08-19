@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "D:\Radio\Jobe\IR_Controller\f303\f303_sens\EWARM\settings\f303_sens.f303_sens.general.xcl" --backend -f "D:\Radio\Jobe\IR_Controller\f303\f303_sens\EWARM\settings\f303_sens.f303_sens.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\settings\f303_sens.f303_sens.general.xcl" --backend -f "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\settings\f303_sens.f303_sens.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "D:\Radio\Jobe\IR_Controller\f303\f303_sens\EWARM\settings\f303_sens.f303_sens.general.xcl" --debug_file=$debugfile --backend -f "D:\Radio\Jobe\IR_Controller\f303\f303_sens\EWARM\settings\f303_sens.f303_sens.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\settings\f303_sens.f303_sens.general.xcl" --debug_file=$debugfile --backend -f "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\settings\f303_sens.f303_sens.driver.xcl" 
 }
