@@ -1,120 +1,79 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.2.214/W32 for ARM                  19/Aug/2021  10:35:36
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  21/Aug/2021  12:36:36
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
-#        D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Exe\f303_sens.out
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Exe\f303_sens.out
 #    Map file     =
-#        D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\List\f303_sens.map
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\List\f303_sens.map
 #    Command line =
-#        -f C:\Users\Sergey\AppData\Local\Temp\EW9525.tmp ("D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\adc.o" "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\cmsis_os.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\croutine.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\dma.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\event_groups.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\filter_sma.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\flash_user.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\freertos.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\gpio.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\heap_4.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\list.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\main.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mb.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbcrc.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfunccoils.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncdiag.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncdisc.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncholding.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncinput.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncother.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbrtu.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbutils.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\port.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\portasm.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\portevent.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\portserial.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\porttimer.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\queue.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\sensor.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\startup_stm32f303xc.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_adc.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_adc_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_cortex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_dma.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_exti.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_flash.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_flash_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_gpio.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_i2c.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_i2c_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_msp.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_pwr.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_pwr_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_rcc.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_rcc_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_tim.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_tim_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_timebase_tim.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_uart.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_uart_ex.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_it.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stream_buffer.o"
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\system_stm32f3xx.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\tasks.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\tim.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\timers.o"
-#        "D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\usart.o"
+#        -f C:\Users\IERIXO~1\AppData\Local\Temp\EW8548.tmp
+#        (D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\adc.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\cmsis_os.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\croutine.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\dma.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\event_groups.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\filter_sma.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\flash_user.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\freertos.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\gpio.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\heap_4.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\list.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\main.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mb.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbcrc.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfunccoils.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncdiag.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncdisc.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncholding.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncinput.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbfuncother.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbrtu.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\mbutils.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\port.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\portasm.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\portevent.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\portserial.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\porttimer.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\queue.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\sensor.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\startup_stm32f303xc.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_adc.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_adc_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_cortex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_dma.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_exti.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_flash.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_flash_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_gpio.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_i2c.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_i2c_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_msp.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_pwr.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_pwr_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_rcc.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_rcc_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_tim.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_tim_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_timebase_tim.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_uart.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_hal_uart_ex.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stm32f3xx_it.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\stream_buffer.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\system_stm32f3xx.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\tasks.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\tim.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\timers.o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj\usart.o
 #        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
-#        --no_out_extension -o "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Exe\f303_sens.out" --map
-#        "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\List\f303_sens.map"
-#        --config "D:\Kicads
-#        Schem\GP2Y0A02YK0F\f303_sens\EWARM/stm32f303xc_flash.icf"
+#        --no_out_extension -o
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Exe\f303_sens.out
+#        --map
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\List\f303_sens.map
+#        --config
+#        D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM/stm32f303xc_flash.icf
 #        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
@@ -462,7 +421,7 @@ command line/config:
     -------------------------------------------------------
     Total:
 
-D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj: [1]
+D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj: [1]
     adc.o                             396               148
     cmsis_os.o                        444
     dma.o                              44
@@ -969,7 +928,7 @@ xTickCount              0x2000'3768     0x4  Data  Lc  tasks.o [1]
 xYieldPending           0x2000'3778     0x4  Data  Lc  tasks.o [1]
 
 
-[1] = D:\Kicads Schem\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj
+[1] = D:\Radio\Jobe\GP2Y0A02YK0F\f303_sens\EWARM\f303_sens\Obj
 [2] = dl7M_tlf.a
 [3] = m7M_tls.a
 [4] = rt7M_tl.a

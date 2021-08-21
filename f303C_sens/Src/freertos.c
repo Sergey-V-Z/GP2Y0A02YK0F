@@ -53,7 +53,7 @@
 /* USER CODE BEGIN Variables */
 extern TIM_HandleTypeDef htim3;
 extern ADC_HandleTypeDef hadc2;
-
+extern ADC_HandleTypeDef hadc1;
 
 extern settings_t settings;
 uint16_t sensBuff[8] = {0};
@@ -154,7 +154,7 @@ void MX_FREERTOS_Init(void) {
 void mainTask(void const * argument)
 {
   /* USER CODE BEGIN mainTask */
-HAL_ADC_Start_DMA(&hadc2, (uint32_t*)&adc_buffer, 3);
+HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&adc_buffer, 1);
    HAL_TIM_Base_Start_IT(&htim3); 
 
    HAL_GPIO_WritePin(R_GPIO_Port, R_Pin, GPIO_PIN_SET);
@@ -247,23 +247,23 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegi
          {
            case 0: 
             {	
-              uint16_t temp = Sensor1.Get_Result();
+              uint16_t temp = (uint16_t)Sensor1.getdetect();
               *(pucRegBuffer) = (temp & 0xff00)>>8;
               *(pucRegBuffer+1) = temp & 0x00ff;
             break;
             }
            case 1: 
             {	
-              uint16_t temp = Sensor2.Get_Result();
-              *(pucRegBuffer) = (temp & 0xff00)>>8;
-              *(pucRegBuffer++) = temp & 0x00ff;
+//              uint16_t temp = Sensor2.Get_Result();
+//              *(pucRegBuffer) = (temp & 0xff00)>>8;
+//              *(pucRegBuffer++) = temp & 0x00ff;
                break;
             }
            case 2: 
             {	
-              uint16_t temp = Sensor3.Get_Result();
-              *(pucRegBuffer) = (temp & 0xff00)>>8;
-              *(pucRegBuffer++) = temp & 0x00ff;
+//              uint16_t temp = Sensor3.Get_Result();
+//              *(pucRegBuffer) = (temp & 0xff00)>>8;
+//              *(pucRegBuffer++) = temp & 0x00ff;
                break;
             }
            case 3: //Status Dir
@@ -293,22 +293,23 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegi
             }
            case 8: 
             {	
-               //(*(pucRegBuffer) = ) | (*(pucRegBuffer+1))) = settings.BaudRate /10;
+              
+              //Flash_Write(settings, StartSettingsAddres);
                break;
             }
            case 9: 
             {	
-               *(pucRegBuffer++) = sensState;
+               *(pucRegBuffer++) = settings.BaudRate;
                break;
             }
            case 10: 
             {	
-               
+               *(pucRegBuffer++) = settings.SlaveAddress;
                break;
             }
            case 11: 
             {	
-               *(pucRegBuffer++) = settings.BaudRate;
+               
                break;
             }              
            default:
@@ -365,22 +366,23 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegi
             }
            case 8: 
             {	
-               settings.BaudRate = ((*(pucRegBuffer)<<8) | (*(pucRegBuffer+1)))*10;
+              Flash_Write(settings, StartSettingsAddres);
+               
                break;
             }
            case 9: 
             {	
-               
+               settings.BaudRate = ((*(pucRegBuffer)<<8) | (*(pucRegBuffer+1)))*10;
                break;
             }
-           case 11: 
+           case 10: 
             {	
                settings.SlaveAddress = *(pucRegBuffer++);
                break;
             }
            case 0x0F: 
             {	
-               Flash_Write(settings, StartSettingsAddres);
+               //Flash_Write(settings, StartSettingsAddres);
                break;
             }
            default:

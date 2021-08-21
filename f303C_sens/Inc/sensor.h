@@ -23,9 +23,15 @@ class sensor: public filter{
    bool getdetect();
    void Call(uint16_t *data); // калибрует датчик, принимает указатель на переменную в которую поступаю свежие данные
    
+   uint32_t timOut = 10;
+   
   private:
    uint16_t offsetMin = 0;              // зона работы датчика
    uint16_t offsetMax = 4096;           // зона работы датчика
    uint32_t timeCall = 3000;            // время выполнение калибровки
    bool detect;                         // в зоне сенсора что то есть
+   
+   uint32_t oldTime = 0;
+   uint32_t time = 0;
+       
 };

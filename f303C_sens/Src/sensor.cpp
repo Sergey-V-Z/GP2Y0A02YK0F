@@ -10,12 +10,24 @@ sensor :: ~sensor(){
 
 bool sensor :: detectPoll(){
   
-   //if((Result > offsetMin) && (Result < offsetMax)){
-   if(Result > offsetMin){
+  //if((Result > offsetMin) && (Result < offsetMax)){
+  if(Result > offsetMax){
+    if(oldTime == 0){
+      oldTime = HAL_GetTick();
+    }
+    
+    time = HAL_GetTick() - oldTime; 
+    
+    if(time >= timOut){
       detect = true;
-   }
-   else{detect = false;}
-   return detect;
+      oldTime = 0;
+    }
+  }
+  else{
+    detect = false;
+    oldTime = 0;
+  }
+  return detect;
 }
 
 void sensor :: Call(uint16_t *data){
