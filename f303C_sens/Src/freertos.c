@@ -255,9 +255,9 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegi
             }
            case 1: 
             {	
-//              uint16_t temp = Sensor2.Get_Result();
-//              *(pucRegBuffer) = (temp & 0xff00)>>8;
-//              *(pucRegBuffer++) = temp & 0x00ff;
+              uint16_t temp = Sensor1.Get_Result();
+              *(pucRegBuffer) = (temp & 0xff00)>>8;
+              *(pucRegBuffer++) = temp & 0x00ff;
                break;
             }
            case 2: 
